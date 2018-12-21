@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Main2Activity"
+    android:orientation="vertical"
+    >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+       android:id="@+id/Recy_Tou"
+        >
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="扫一扫"
+            android:id="@+id/Sao_Yi_Sao"
+            android:layout_marginRight="20dp"
+
+            />
+
+        <EditText
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/Et_Name"
+            android:layout_marginRight="20dp"
+            android:layout_toRightOf="@id/Sao_Yi_Sao"
+            />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="切换"
+            android:id="@+id/QieHuan"
+            android:layout_alignParentRight="true"
+            android:focusable="false"
+            />
+
+
+
+
+    </RelativeLayout>
+
+    <android.support.v7.widget.RecyclerView
+        android:layout_width="match_parent"
+        android:layout_height="300dp"
+        android:id="@+id/Recy_Biao"
+        android:layout_below="@id/Recy_Tou"
+        >
+
+    </android.support.v7.widget.RecyclerView>
+
+
+    <android.support.v7.widget.RecyclerView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/Recy_List"
+        android:layout_below="@id/Recy_Biao"
+        android:layout_alignParentBottom="true"
+        ></android.support.v7.widget.RecyclerView>
+    <android.support.v7.widget.RecyclerView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/Recy_Group_List"
+        android:layout_below="@id/Recy_Biao"
+        android:layout_alignParentBottom="true"
+        ></android.support.v7.widget.RecyclerView>
+
+
+
+
+
+
+</RelativeLayout>
